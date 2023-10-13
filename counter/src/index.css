@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+}
+
+.ora {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+  padding: 1em;
+  flex-direction: column;
+  width: 100px;
+  
+}
+.ora > .btn-event > button{
+  border: 1px solid black;
+}
+
+.ora input {
+  background-color: rgb(240, 240, 240);
+  border: none;
+}
+
+.ora button {
+  background-color: rgb(240, 240, 240);
+  border: none;
+  padding: 0.3em;
+  text-align: center;
+  cursor: pointer;
+  max-width: 90%;
+}
+
+.day {
+  display: grid;
+  gap: 0.3em;
+  height: 800px;
+  background-color: rgb(162, 160, 160);
+  overflow: auto;
+  padding: 1em;
+  gap: 1em;
+}
+
+.Month {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: center;
+}
+.year{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.year > button {
+  height: 100px;
+}
+.week {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    height: 400px;
+    width: 600px;
+    text-align: center;
+    
+}
+.products, .chart{
+    border: 1px solid white;
+    width: 50%;
+    height: 100%;
+    margin: 5px;
+    border-radius: 25px;
+}
+.card-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr; 
+   margin: 10px;
+
+}
+.items-description{
+    display: grid;
+    justify-self: start;
+}
+
+img{
+    border-radius: 50%;
+}
+
+

@@ -1,0 +1,37 @@
+body {
+    background-color: #434750;
+  }
+input {
+  background-color: #282c34;
+  border: 0px;
+  color: white;
+  width: 100px;
+}
+button {
+    background-color: #434750;
+    border: 1px solid rgb(148, 148, 148);
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+  }
+.sett-cont {
+  display: flex;
+  width: auto;
+  
+}
+.giornata {
+  border: 1px solid rgb(189, 12, 12);
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  overflow: auto;
+  width: 200px;
+  
+}
+.mese{
+    display: flex;
+    flex-wrap: wrap;
+}
+
