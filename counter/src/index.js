@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import  Year  from "./Caroline/Year";
+import Hour from "./nuovoCalendario/hour";
+import Day from "./nuovoCalendario/Day";
+import Week from "./nuovoCalendario/Week";
+//import  Year  from "./Calendario/Year";
 // import Counter from "./components/Counter";
 // import PlusMinus from "./components/PlusMinus";
 // import Hello from "./components/Hello";
@@ -26,16 +29,21 @@ import  Year  from "./Caroline/Year";
 //import Settimana from './components/calendario/Settimana'
 //import  Mese  from "./components/calendario/Mese";
 //import  Anno  from "./components/calendario/Anno";
-import Week from "./Caroline/Week";
-import { Month } from "./Caroline/Month";
-import { Hour } from "./Caroline/Hour";
+//import Week from "./Caroline/Week";
+//import { Month } from "./Caroline/Month";
+//import { Hour } from "./Caroline/Hour";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <div className="App">
-       <header className="App-header">
-        {/*
+  <React.StrictMode> 
+         <Week/>
+        {/* <Hour /> 
+        <Day/>*/}
+  </React.StrictMode>
+);
+
+
+{/*
         <Counter />
         <PlusMinus min={0} max={10} />
         <Hello />
@@ -57,22 +65,9 @@ root.render(
           <Giornata/>
           <Settimana/>
           <Mese/>
-         
-        */}
-         {/* <Anno/> */}
+            <Anno/> 
         <Year />
-        {/* <Week/> */}
-        {/* <Month/> */}
+        <Week/>
+        <Month/>
         
-        
-      
-       
-        
-       
-        
-       
-       
-      </header>
-    </div>
-  </React.StrictMode>
-);
+        */}
