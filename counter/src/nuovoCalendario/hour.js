@@ -6,7 +6,7 @@ function Hour({ ora }) {
 
   function handleOnClick() {
     const task = prompt('Add event');
-    setText(task);
+    setText([...text,task]);
   }
 
   return (

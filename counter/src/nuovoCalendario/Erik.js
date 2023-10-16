@@ -10,7 +10,7 @@
 
 import { useEffect, useState } from 'react';
 
-export default function Calendario() {
+export default function Erik() {
 
     const [currentDate, setCurrentDate] = useState(new Date())
     const [holiday, setHoliday] = useState([])

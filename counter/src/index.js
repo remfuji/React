@@ -4,6 +4,7 @@ import "./index.css";
 import Hour from "./nuovoCalendario/hour";
 import Day from "./nuovoCalendario/Day";
 import Week from "./nuovoCalendario/Week";
+import Erik from "./nuovoCalendario/Erik";
 //import  Year  from "./Calendario/Year";
 // import Counter from "./components/Counter";
 // import PlusMinus from "./components/PlusMinus";
@@ -36,8 +37,10 @@ import Week from "./nuovoCalendario/Week";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode> 
-         <Week/>
-        {/* <Hour /> 
+       <Week/>
+        {/* 
+        
+        <Hour /> 
         <Day/>*/}
   </React.StrictMode>
 );

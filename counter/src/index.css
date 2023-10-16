@@ -72,14 +72,14 @@ html {
 
 body,
 html {
-  height: 100%;
+ display: flex;
+ justify-content: center;
   scroll-behavior: smooth;
 }
 
 #root {
   display: flex;
-  height: 100%;
-
+  
 }
 
 .hour-container {
@@ -96,7 +96,6 @@ html {
   padding: 5px;
   display: flex;
   flex-direction: column;
-
 }
 
 .hour-and-btn>div:nth-child(2) {
@@ -115,21 +114,35 @@ html {
 .event {
   padding: 5px;
 }
+.father-week-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
 
 .week-container {
   display: flex;
   justify-content: center;
-
   width: 100%;
 }
 
 .day-container {
   margin: 5px;
-  height: 100%;
+}
+
+.day-container,
+.hour-container{
+  border: 1px solid white;
 }
 
 .day-container:hover,
 .hour-container:hover {
   border: 1px solid red;
 }
-
+.head-week{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
