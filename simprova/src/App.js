@@ -7,11 +7,7 @@ import Forum from './pages/Forum';
 function App() {
  
   return (
-    <Router>
-            <Routes>
-                <Route path="/" element={<Forum />} />
-            </Routes>
-        </Router>
+      <Forum />
   );
 }
 

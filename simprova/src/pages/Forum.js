@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Posts from "../components/PostToChose";
+import Posts from "../components/Postlist";
 import Content from "../components/Content";
 import "../App.css";
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function Content({ postId }) {
-  const [postDetails, setPostDetails] = useState(null);
+  const [postDetails, setPostDetails] = useState('');
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
@@ -25,20 +25,17 @@ export default function Content({ postId }) {
 
   return (
     <>
-      
-        
-          <h2>Dettagli del post: {postDetails.id}</h2>
-          <div>Title: {postDetails.title}</div>
-          <div>Body: {postDetails.body}</div>
-
-          <h3>Commenti:</h3>
-          <ul>
-              {comments.map((comment) => (
-                <li key={comment.id}>
-                  <strong>{comment.email}</strong><br /><strong>Dice:</strong> {comment.body}
-                </li>
-              ))}
-            </ul>
+      <h2>Dettagli del post: {postDetails.id}</h2>
+      <div>Title: {postDetails.title}</div>
+      <div>Body: {postDetails.body}</div>
+      <h3>Commenti:</h3>
+      <ul>
+        {comments.map((comment) => (
+          <li key={comment.id}>
+            <strong>{comment.email}</strong><br /><strong>Dice:</strong> {comment.body}
+          </li>
+        ))}
+      </ul>
     </>
   );
 }
