@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export default function Posts({ onPostClick }) {
+export default function PostList({ onPostClick }) {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {

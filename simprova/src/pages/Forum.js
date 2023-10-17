@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Posts from "../components/Postlist";
-import Content from "../components/Content";
+import Content from "../components/Showpost";
 import "../App.css";
+import PostList from "../components/Postlist";
+import Showpost from "../components/Showpost";
 
 function Forum() {
   const [selectedPostId, setSelectedPostId] = useState(null);
@@ -15,10 +17,10 @@ function Forum() {
       <h1>Forum</h1>
       <div className="container">
         <div className="comp1">
-          <Posts onPostClick={handlePostClick} />
+          <PostList onPostClick={handlePostClick} />
         </div>
         <div className="comp2">
-          {selectedPostId && <Content postId={selectedPostId} />}
+           <Showpost postId={selectedPostId} />
         </div>
       </div>
     </div>

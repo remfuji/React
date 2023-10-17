@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export default function Content({ postId }) {
+export default function Showpost({ postId }) {
   const [postDetails, setPostDetails] = useState('');
   const [comments, setComments] = useState([]);
 
