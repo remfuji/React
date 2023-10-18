@@ -12,6 +12,8 @@ export default function PostList({ onPostClick }) {
     fetchData();
   }, []);
 
+ 
+
   return (
     <>
       {posts.map((post) => (
