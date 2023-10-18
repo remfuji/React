@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Posts from "../components/Postlist";
-import Content from "../components/Showpost";
 import "../App.css";
 import PostList from "../components/Postlist";
 import Showpost from "../components/Showpost";
@@ -8,16 +6,14 @@ import Showpost from "../components/Showpost";
 function Forum() {
   const [selectedPostId, setSelectedPostId] = useState(null);
 
-  const handlePostClick = (postId) => {
-    setSelectedPostId(postId);
-  };
+ 
 
   return (
     <div className="App">
       <h1>Forum</h1>
       <div className="container">
         <div className="comp1">
-          <PostList onPostClick={handlePostClick} />
+          <PostList onPostClick={setSelectedPostId} />
         </div>
         <div className="comp2">
            <Showpost postId={selectedPostId} />
