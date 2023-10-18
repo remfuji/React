@@ -1,0 +1,13 @@
+
+.item-playlist{
+    cursor: pointer;
+    padding: 5px;
+   
+
+}
+.item-playlist:hover{
+   background-color: beige;
+   border-radius: 25px;
+ 
+    
+}
