@@ -12,16 +12,14 @@ export default function PostList({ onPostClick }) {
     fetchData();
   }, []);
 
-  const handlePostClick = (postId) => {
-    onPostClick(postId);
-  };
+ 
 
   return (
     <>
       {posts.map((post) => (
         <div className="posts" key={post.id}>
           <div>Post: {post.id}</div>
-          <button onClick={() => handlePostClick(post.id)}>Visualizza</button>
+          <button onClick={() => onPostClick(post.id)}>Visualizza</button>
         </div>
       ))}
     </>
