@@ -1,13 +1,22 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import './App.css';
-
-import Forum from './pages/Forum';
+import Spotify from './pages/spotify/Spotify';
+import Playlist from './components/spotify/Playlist';
 
 
 function App() {
  
   return (
-      <Forum/>
+     <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Spotify/>}>
+          <Route path='Playlist' element={<Playlist/>}/>
+
+
+        </Route>
+      </Routes>
+     </BrowserRouter>
+      
   );
 }
 
