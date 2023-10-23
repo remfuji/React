@@ -167,3 +167,6 @@ a{
 a:hover{
   color: red;
 }
+.slick-prev, .slick-next{
+  background-color: black;
+}
