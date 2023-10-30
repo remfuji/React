@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Cart({ cart }) {
   const [cartItems, setCartItems] = useState(cart)
-
+  console.log(cartItems)
   const calculateTotalPrice = () => {
     const totalPrice = cartItems.reduce(
       (total, product) => total + product.price * product.quantity,
@@ -25,10 +25,12 @@ function Cart({ cart }) {
       const updatedCart = [...cartItems];
       if (updatedCart[productIndex].quantity) {
         updatedCart[productIndex].quantity--;
-      } else {
+      } 
+      else {
         updatedCart.splice(productIndex, 1);
       }
       setCartItems(updatedCart);
+      
     
   };
 

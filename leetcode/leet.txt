@@ -1,0 +1,85 @@
+
+let s = 'abcaaac'
+let substring = ' '
+function  lengthOfLongestSubstring(s) {
+   
+   for(let i = 0; i < s.length; i++)
+   {
+      for(let j = 0; j < substring.length; j++)
+      {
+        if(s[i] !== substring[j])
+        {
+            substring += s[i]
+        }
+      }
+   }
+ return substring
+};
+
+console.log(lengthOfLongestSubstring(s))
+
+// srivere tutte le risosrse coinvolte dentro instagram + 
+// gli endpoint
+// disponibili agli utenti e diverse tioplogie 
+// di accesso alle API
+// 10 ENDPOINT E almeno 2 endpoint per verbo
+
+// GET/PUT/DELETE/POST/user (con autorizazzioni)
+// GET/POST/PUT/DELETE/user/pic => /
+// GET/POST/PUT/DELETE/user/reels => /daily, /history
+// GET/POST/post => /comment, /reaction
+// GET/POST/PUT/DELETE/chat => /user/chats-user/h275
+// GET/POST/PUT/DELETE/user/video => /
+// GET/POST/PUT/DELETE/segnalazioni => /
+// GET/POST/PUT/DELETE/notifiche => /
+// GET/search 
+
+
+//    /linee=> /linea:id=>
+//                  /stato => true | false
+//                  /stazioni=> 
+//                    /stato => true | false
+//                                    
+//                        /stazione/:id =>
+//
+//                          /stato => true | false
+//                          /webcams => 
+//                                  /status: true | false 
+//                                  /webcam:id
+//                          /handicap => 
+//                                  /yes
+//                                    /status: true | false
+//                                  /no
+//                          /gate =>
+//                                /status: true | false
+//                                /setStatus: open | close
+//                          /screens =>
+//                                /status: true | false
+//                                /setStatus: view | hide
+//                          
+//                          /treni=>treno/:id =>
+//
+//                              /stato => true | false
+//                              /fascia-oraria
+//                              /anno
+//                              /conducente=>
+//                                    /coducente/:id                                      
+//                              /deposito=>
+//                                     /deposito/:id
+//                                        status: true | false
+//                              /manutenzione
+//                                    status: true | false
+//                              /partenza
+//                              /arrivo
+//                              /biglietti=>
+//                                    /normal: true | false
+//                                    /premium: true | false
+//                              /capienza=>
+//                                  /capienza attuale: {}
+//                                  /capienza totale: {}
+//                              /door=>                                      
+//                                   status: true | false
+//                                   setStatus: open | close  
+//                              /screen=>
+//                                /status: true | false
+//                                /setStatus: view | hide                                     
